@@ -1,0 +1,52 @@
+    body {
+        background-color: rgb(11, 11, 11);
+        color: white;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .header, .footer {
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 10px;
+        padding: 10px;
+        background-color: gray;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 10px;
+    }
+
+    .mid {
+        background-color: rgb(255, 89, 0);
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .mid:nth-last-child(2),
+    .mid:nth-last-child(1) {
+        grid-column: span 2; 
+    }
+
+    .sidebar {
+        background-color: green;
+        padding: 100px;
+        margin: 10px;
+        color: white;
+        text-align: left;
+        min-width: 200px;
+    }
+
+    .footer {
+        margin-top: 10px;
+    }
